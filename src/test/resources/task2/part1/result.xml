@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <personList>
+        <birthDate>09.09.1769</birthDate>
+        <name>Іван Котляревський</name>
+    </personList>
+    <personList>
+        <birthDate>09.03.1814</birthDate>
+        <name>Тарас Шевченко</name>
+    </personList>
+    <personList>
+        <birthDate>27.08.1856</birthDate>
+        <name>Іван Франко</name>
+    </personList>
+    <personList>
+        <birthDate>13.02.1871</birthDate>
+        <name>Леся Українка</name>
+    </personList>
+</persons>

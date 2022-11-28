@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<fines>
+    <fine>
+        <date_time>2020-05-05 15:39:03</date_time>
+        <first_name>Ivan</first_name>
+        <last_name>Ivanov</last_name>
+        <type>SPEEDING</type>
+        <fine_amount>340</fine_amount>
+    </fine>
+    <fine>
+        <date_time>2020-05-05 15:39:03</date_time>
+        <first_name>Ivan</first_name>
+        <last_name>Ivanov</last_name>
+        <type>INTERSECTION_LINE</type>
+        <fine_amount>1000</fine_amount>
+    </fine>
+    <fine>
+        <date_time>2020-05-05 15:39:03</date_time>
+        <first_name>Ivan</first_name>
+        <last_name>Ivanov</last_name>
+        <type>INTERSECTION_LINE</type>
+        <fine_amount>333</fine_amount>
+    </fine>
+</fines>
