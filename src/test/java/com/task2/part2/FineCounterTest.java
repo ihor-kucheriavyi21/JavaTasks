@@ -1,8 +1,6 @@
 package com.task2.part2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.task2.part1.PersonHandler;
-import com.task2.part1.data.Persons;
 import com.task2.part2.data.Fine;
 import com.task2.part2.data.Fines;
 import lombok.SneakyThrows;
