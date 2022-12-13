@@ -2,13 +2,17 @@ package com.task2.part2;
 
 import com.task2.part2.data.Fine;
 import com.task2.part2.data.Fines;
+import lombok.SneakyThrows;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FineHandler extends DefaultHandler {
+public class FineHandler extends DefaultHandler implements IFineHandler {
 
     private static final String FINES = "fines";
     private static final String FINE = "fine";
@@ -64,7 +68,17 @@ public class FineHandler extends DefaultHandler {
         return fineList.get(latestIndex);
     }
 
-    public Fines getRootElement() {
+    @SneakyThrows
+    public Fines getFinesFromXmlFile(File file) {
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
+        SAXParser saxParser = factory.newSAXParser();
+        FineHandler fineHandler = new FineHandler();
+        saxParser.parse(file.getPath(), fineHandler);
+        return fineHandler.getRootElement();
+    }
+
+    private Fines getRootElement() {
         return rootElement;
     }
 }
